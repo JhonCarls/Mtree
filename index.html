@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Puntos de Interés</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .result-card {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Búsqueda de Puntos de Interés</h1>
+        <div class="form-group">
+            <label for="latitude">Latitud:</label>
+            <input type="number" class="form-control" id="latitude" placeholder="Ingresa la latitud">
+        </div>
+        <div class="form-group">
+            <label for="longitude">Longitud:</label>
+            <input type="number" class="form-control" id="longitude" placeholder="Ingresa la longitud">
+        </div>
+        <div class="form-group">
+            <label for="radius">Radio de búsqueda (km):</label>
+            <input type="number" class="form-control" id="radius" placeholder="Ingresa el radio de búsqueda">
+        </div>
+        <button id="searchButton" class="btn btn-primary">Buscar</button>
+        <div id="results" class="mt-5"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
